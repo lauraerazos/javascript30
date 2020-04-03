@@ -1,0 +1,70 @@
+html {
+    background: url(https://www.gratistodo.com/wp-content/uploads/2016/09/alicia-a-traves-del-espejo-fondo-hd.jpg);
+    background-size: cover;
+    font-family: "Lucida Console", Monaco, monospace;
+    text-align: center;
+    font-size: 10px;
+}
+
+.text {
+    position:relative;
+}
+p {
+    position:absolute;
+    bottom: 60px;
+    right: 60px;
+    width: 200px;
+}
+
+body {
+    font-size: 2.6rem;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.clock {
+    width: 30rem;
+    height: 30rem;
+    border: 10px solid rgb(172, 110, 53);
+    border-radius: 50% 50% 0 0;
+    margin: 50px auto;
+    position: relative;
+    padding: 2rem;
+    box-shadow: 
+        0 0 0px 4px rgba(0, 0, 0, 0.1),
+        inset 0 0 0 3px #5f0808,
+        inset 0 0 10px black,
+        0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+}
+
+.hand {    
+    width: 50%;
+    background: black;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.hour {
+    height: 6px;
+}
+
+.minute {
+    height: 4px;
+}
+
+.second {
+    height: 2px;
+}
