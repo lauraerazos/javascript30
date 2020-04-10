@@ -1,0 +1,15 @@
+html {
+    text-align: center;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    background: bisque;
+    min-height: 100vh;
+}
+
+p{
+    position: relative;
+    margin: 50vh auto;
+}
